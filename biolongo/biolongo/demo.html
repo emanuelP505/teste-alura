@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biolongo Demo</title>
+  <script src="lucide.js"></script>
+
+<style>
+  :root {
+    --primaria: #C94F30;
+    --secundaria: #1A2B4C;
+    --acento: #F2B705;
+    --fundo: #FAF7F2;
+    --texto: #1C1C1C;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(26, 43, 76, 0.1);
+    width: 100%;
+    max-width: 380px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .icones-topo {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .icone-circulo {
+    width: 56px;
+    height: 56px;
+    background: var(--fundo);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #E5E1DB;
+  }
+  .icone-circulo svg {
+    color: var(--primaria);
+    width: 28px;
+    height: 28px;
+  }
+  h1 {
+    color: var(--secundaria);
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+  }
+  .sub {
+    color: #6B7280;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #E5E1DB;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  input:focus {
+    border-color: var(--primaria);
+    outline: none;
+  }
+  button {
+    width: 100%;
+    padding: 16px;
+    background: var(--primaria);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .divisor {
+    margin: 20px 0;
+    font-size: 12px;
+    color: #9CA3AF;
+  }
+  .selos {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .selo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #6B7280;
+  }
+  .selo svg {
+    width: 16px;
+    height: 16px;
+    color: #2E8B57;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <!-- Ícones topo estilo Messenger: gente comprando -->
+  <div class="icones-topo">
+    <div class="icone-circulo">
+      <i data-lucide="smartphone"></i>
+    </div>
+    <div class="icone-circulo">
+      <i data-lucide="shopping-bag"></i>
+    </div>
+    <div class="icone-circulo">
+      <i data-lucide="shield-check"></i>
+    </div>
+  </div>
+
+  <h1>Entra no Biolongo</h1>
+  <p class="sub">Compra seguro. Recebe ou dinheiro de volta.</p>
+
+  <input type="tel" placeholder="Teu número WhatsApp">
+  <input type="password" placeholder="Palavra-passe">
+  <button>Entrar e Comprar</button>
+
+  
+  <div class="selos">
+    <div class="selo">
+      <i data-lucide="lock"></i>
+      <span>3PAY</span>
+    </div>
+    <div class="selo">
+      <i data-lucide="banknote"></i>
+      <span>BAI</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

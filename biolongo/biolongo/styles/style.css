@@ -1,0 +1,68 @@
+:root {
+  --biolongo-primaria: #C94F30;
+  --biolongo-secundaria: #1A2B4C; 
+  --biolongo-acento: #F2B705;
+  --biolongo-sucesso: #2E8B57;
+  --biolongo-fundo: #FAF7F2;
+  --biolongo-borda: #E5E1DB;
+  --biolongo-texto: #1C1C1C;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--biolongo-fundo);
+  margin: 0;
+  padding: 0 0 80px 0;
+  color: var(--biolongo-texto);
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 16px 16px 16px;
+  color: var(--biolongo-secundaria);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* BARRA INFERIOR - A MÁGICA TÁ AQUI */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 -2px 10px rgba(0,0,0,.08);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  z-index: 999;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #9CA3AF;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+.nav-item.active { color: var(--biolongo-primaria); }
+.nav-item .ph { font-size: 24px; }
+
+/* Cole aqui todo CSS dos módulos que te passei antes */
+.filtros-biolongo, .grelha-produtos, .card-produto, .card-biolongo, 
+.card-saldo, .lista-pedidos, .card-pedido, .btn-comprar, .btn-pagar {
+  /* Pega do código anterior */
+}
+.card-biolongo{
+  padding: 8px;
+  color: #FAF7F2;
+  width: 300px;
+  background-color: #1A2B4C;
+  margin: 1rem;
+  border-radius: 12px;
+}

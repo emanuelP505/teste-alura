@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biolongo - Pedidos</title>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="page-title">
+    <i class="ph ph-package"></i> Meus Pedidos
+  </div>
+
+  <div class="lista-pedidos">
+    <div class="card-pedido">
+      <div class="header-pedido">
+        <span class="id-pedido">#BL202601</span>
+        <span class="status-pedido status-enviado">A caminho</span>
+      </div>
+      <div class="corpo-pedido">
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=100">
+        <div>
+          <h4>iPhone 13 128GB</h4>
+          <p>450.000 Kz · Loja Paulo</p>
+          <div class="timeline">
+            <div class="step done"><i class="ph-fill ph-check-circle"></i> Pago</div>
+            <div class="step done"><i class="ph-fill ph-check-circle"></i> Enviado</div>
+            <div class="step"><i class="ph ph-circle"></i> Entregue</div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-confirmar">
+        <i class="ph ph-check"></i> Confirmar que Recebi
+      </button>
+    </div>
+  </div>
+
+  <!-- BARRA INFERIOR -->
+  <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+      <i class="ph ph-house"></i>
+      <span>Início</span>
+    </a>
+    <a href="checkout.html" class="nav-item">
+      <i class="ph ph-shopping-cart"></i>
+      <span>Carrinho</span>
+    </a>
+    <a href="pedidos.html" class="nav-item active">
+      <i class="ph-fill ph-package"></i>
+      <span>Pedidos</span>
+    </a>
+    <a href="fornecedor.html" class="nav-item">
+      <i class="ph ph-storefront"></i>
+      <span>Vender</span>
+    </a>
+  </nav>
+</body>
+</html>
